@@ -1,0 +1,25 @@
+Flathead
+Copyright 2026 cpwillis
+
+Side-facing AU plug for Apple chargers: CAD source, drawings and renders.
+https://github.com/cpwillis-pocs/flathead
+
+Licences:
+- Hardware design (cad/: CAD source; docs/: drawings, renders, dieline; all CAD exports): CERN Open Hardware
+  Licence Version 2 - Permissive (CERN-OHL-P-2.0, LICENSE). Under its section 4, anyone who makes or conveys a
+  Product must ensure its recipient has access to this NOTICE.
+- Everything else (tests/, CI, project tooling): Apache License 2.0 (LICENSE-APACHE); section 4(d) requires this
+  NOTICE in redistributions and derivative works.
+
+Credit line for derivative designs, documentation and products:
+
+    Based on Flathead by cpwillis, https://github.com/cpwillis-pocs/flathead
+
+The design carries its origin: "cpwillis" is moulded into the parts and fixtures, and the drawings, renders, STEP
+and STL exports carry attribution metadata. docs/SHA256SUMS.asc is a detached signature of the published assets.
+
+cad/fonts/Aileron-Regular.ttf: Aileron by Sora Sagano (Dot Colon), CC0 1.0, as subset in Pillow.
+
+Neither licence grants rights in the name "Flathead". Apple, MacBook and MagSafe are trademarks of Apple Inc.
+This project is not affiliated with, authorised, sponsored or approved by Apple. Other product names are
+trademarks of their respective owners.

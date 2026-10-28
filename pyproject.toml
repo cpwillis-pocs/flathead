@@ -1,0 +1,41 @@
+[project]
+name = "flathead"
+version = "0.1.0"
+description = "A side-facing plug for Apple chargers. Simple, minimal, functional."
+readme = "README.md"
+license = "CERN-OHL-P-2.0 AND Apache-2.0"
+license-files = ["LICENSE", "LICENSE-APACHE", "NOTICE"]
+authors = [{ name = "cpwillis" }]
+requires-python = ">=3.12,<3.14"
+dependencies = ["build123d>=0.13"]
+
+[project.urls]
+Repository = "https://github.com/cpwillis-pocs/flathead"
+
+[tool.uv]
+package = false
+
+[dependency-groups]
+dev = [
+    "pillow>=11",
+    "pytest>=9.1.1",
+    "ruff>=0.17.2",
+]
+render = [
+    "mitsuba>=3.9",
+    "pillow>=11",
+]
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "SIM", "C4"]
+
+[tool.ruff.lint.flake8-bugbear]
+extend-immutable-calls = ["interface.Params", "d2.D2Params", "mould.MouldParams", "jig.NestParams"]
+
+[tool.pytest.ini_options]
+pythonpath = ["cad"]
+testpaths = ["tests"]
